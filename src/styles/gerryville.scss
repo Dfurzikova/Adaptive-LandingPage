@@ -1,0 +1,176 @@
+@import 'variables.scss';
+.gerryville {
+    overflow: visible;
+    &__title {
+        font-family: PT Serif;
+        color: $brownish-grey;
+        padding-bottom: 46px;
+        font-family: PT Serif;
+        font-size: 34px;
+        padding-top: 54px;
+        margin-left: 91px
+    }
+    &__slider {
+        height: 564px;
+        margin-left: 72px;
+        margin-right: -100px;
+        position: relative;
+    }
+    &__arrow {
+        top: 309px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__title {
+            margin-left: 4px;
+        }
+        &__slider {
+            height: 338px;
+            margin-left: 88px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        &__title {
+            padding-top: 48px;
+            font-size: 24px;
+            padding-bottom: 27px;
+        }
+        &__arrow {
+            top: 200px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__title {
+            margin-left: 60px;
+        }
+        &__slider {
+            margin-left: 63px;
+            margin-right: -27px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+
+        &__title {
+            padding-top: 48px;
+            font-size: 24px;
+            padding-bottom: 27px;
+            margin-left: 0;
+        }
+        &__slider {
+            height: 564px;
+            margin-left: 54px;
+            margin-right: -100px;
+            position: relative;
+        }
+        &__arrow {
+            margin-left: 25px;
+            top: 200px;
+        }
+        &__arrow-right {
+            display: none;
+        }
+    }
+}
+
+.slider-workers {
+    &__item {
+        display: inline-block;
+        position: relative;
+        margin-right: -4px;
+    }
+    &__image {
+        height: 564px;
+    }
+    &__item:nth-child(4) {
+        display: inline-block;
+        opacity: 0.6;
+    }
+    &__description-item {
+        font-family: PT Sans;
+        position: absolute;
+        top: 36px;
+        left: 247px;
+        z-index: 2;
+        width: 185px;
+    }
+    &__item:nth-child(2) {
+        .slider-workers__description-item {
+            margin-left: 7px;
+        }
+    }
+    &__item:nth-child(3) {
+        .slider-workers__description-item {
+            margin-left: 37px;
+        }
+    }
+    &__description-post {
+        font-size: 17px;
+    }
+    &__description-location {
+        font-size: 10px;
+    }
+    &__description-devideline {
+        width: 2px;
+        height: 13px;
+        background-color: $red;
+        margin: 5px 0;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__image {
+            height: 338px;
+        }
+        &__item:nth-child(4) {
+            display: none;
+        }
+        &__description-item {
+            top: 22px;
+            left: 150px
+        }
+        &__item:nth-child(2) {
+            .slider-workers__description-item {
+                margin-left: 3px;
+            }
+        }
+        &__item:nth-child(3) {
+            .slider-workers__description-item {
+                margin-left: 22px;
+            }
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 1279px) {
+        &__description-post {
+            font-size: 10px;
+            max-width: 110px;
+        }
+        &__description-location {
+            font-size: 6px;
+        }
+        &__description-devideline {
+            height: 10px;
+            margin: 2px 0;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 1023px) {
+        &__item:last-child {
+            display: inline-block;
+        }
+        &__image {
+            height: 338px;
+        }
+        &__description-item {
+            top: 22px;
+            left: 147px;
+            width: 110px;
+        }
+        &__item:nth-child(3) {
+            .slider-workers__description-item {
+                margin-left: 22px;
+            }
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: flex;
+        &__item:nth-child(2) {
+            opacity: 0.6;
+        }
+    }
+}

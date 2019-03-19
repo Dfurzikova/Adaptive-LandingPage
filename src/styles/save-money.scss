@@ -1,0 +1,96 @@
+@import 'variables.scss';
+.save-money {
+    &__title {
+        color: $white;
+        font-family: PTSerif;
+    }
+    &__subtitle {
+        color: $red;
+        font-family: PT Sans;
+        font-size: 30px;
+        line-height: 1.13;
+        max-width: 450px;
+    }
+    &__description {
+        padding-top: 80px;
+        margin-left: 91px;
+    }
+    &__text {
+        font-family: PT Sans;
+        font-size: 18px;
+        line-height: 1.44;
+        color: $white;
+        max-width: 430px;
+        padding-top: 10px;
+    }
+    &__details-block {
+        margin-left: 495px;
+        margin-top: 7px;
+    }
+    &__arrow {
+        top: 174px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__description {
+            margin-left: 5px;
+            padding-top: 47px;
+        }
+        &__arrow {
+            top: 105px;
+        }
+        &__details-block {
+            margin-left: 288px;
+            margin-top: 0px;
+        }
+        &__arrow {
+            top: 74px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 1279px) {
+        &__subtitle {
+            font-size: 18px;
+            max-width: 252px;
+        }
+        &__text {
+            max-width: 276px;
+            font-size: 11px;
+            line-height: 14px;
+            padding-top: 6px;
+        }
+        &__arrow {
+            top: 74px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__description {
+            margin-left: 61px;
+            padding-top: 45px;
+        }
+        &__details-block {
+            margin-left: 345px;
+            margin-top: 4px;
+        }
+        &__arrow {
+            top: 98px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &__title {
+            max-width: 177px;
+            line-height: 25px;
+        }
+        &__description {
+            margin-left: 0;
+            padding-top: 27px;
+        }
+        &__arrow {
+            display: none;
+        }
+        &__details-block {
+            margin-left: 0;
+            margin-top: 0;
+            position: absolute;
+            right: 0;
+        }
+    }
+}

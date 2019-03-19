@@ -1,0 +1,75 @@
+@import 'variables.scss';
+.rebeccamouth {
+    &__title {
+        font-family: PT Serif;
+    }
+    &__subtitle {
+        color: $red;
+        font-family: PT Serif;
+        font-size: 28px;
+        line-height: 1.21;
+    }
+    &__description {
+        padding-top: 77px;
+        margin-left: 91px;
+    }
+    &__text {
+        font-family: PT Sans;
+        font-size: 18px;
+        line-height: 1.46;
+        color: $black;
+        max-width: 352px;
+        max-height: 105px;
+        padding-top: 13px;
+        overflow: hidden;
+        padding-left: 3px;
+    }
+    &__details-block {
+        margin-left: 401px;
+        margin-top: -10px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__description {
+            margin-left: 5px;
+        }
+        &__details-block {
+            margin-left: 227px;
+            margin-top: 0;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 1279px) {
+        &__subtitle {
+            font-size: 17px;
+        }
+        &__text {
+            max-width: 210px;
+            font-size: 11px;
+            line-height: 1.47;
+            padding-top: 8px;
+            max-height: 63px;
+            padding-left: 0;
+        }
+        &__description {
+            padding-top: 42px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__description {
+            margin-left: 61px;
+        }
+        &__details-block {
+            margin-left: 285px;
+            margin-top: 0;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &__description {
+            margin-left: 0;
+            padding-top: 45px;
+        }
+        &__details-block {
+            margin-left: 194px;
+            margin-top: -3px;
+        }
+    }
+}

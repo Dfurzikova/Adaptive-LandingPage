@@ -1,0 +1,103 @@
+@import 'variables.scss';
+.details {
+    color: $white;
+    display: flex;
+    &__description {
+        margin-left: 30px;
+        margin-top: 125px;
+        max-width: 630px;
+    }
+    &__subtitle {
+        max-width: 470px;
+        font-family: PT Sans;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    &__text {
+        font-family: PT Serif;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+        margin-top: 12px;
+        line-height: 26px;
+    }
+    &__arrow {
+        top: 125px;
+    }
+    &__details-block {
+        margin-top: 277px;
+        margin-left: -36px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__description {
+            margin-top: 73px;
+            margin-left: 45px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        &__subtitle {
+            font-size: 20px;
+            max-width: 305px;
+            margin-top: 0;
+            line-height: 25px;
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 1;
+            margin-top: 5px;
+            max-height: 45px;
+            overflow: hidden;
+            line-height: 14px;
+        }
+        &__description {
+            max-width: 378px;
+            margin-top: 73px;
+
+        }
+        &__details-block {
+            margin-top: 163px;
+            margin-left: 5px;
+        }
+        &__arrow {
+            top: 74px;
+
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__description {
+            margin-top: 73px;
+            margin-left: 8px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        &__subtitle {
+            font-size: 20px;
+            margin-top: 0;
+            line-height: normal;
+        }
+        &__description {
+            margin-top: 9px;
+            margin-left: 0;
+            max-width: 282px;
+        }
+        &__text {
+            font-size: 11px;
+            line-height: 1;
+            margin-top: 5px;
+            overflow: hidden;
+            line-height: 14px;
+        }
+        &__details-block {
+            margin-top: 0px;
+            margin-left: 0px;
+            position: absolute;
+            top: 184px;
+            right: 17px;
+        }
+        &__arrow {
+            top: 74px;
+        }
+    }
+}

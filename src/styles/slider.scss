@@ -1,0 +1,179 @@
+@import 'variables.scss';
+.slider {
+    position: relative;
+    &__indicators {
+        font-family: PT Sans;
+        font-size: 20px;
+        color: $white;
+        display: flex;
+        align-items: flex-end;
+        padding-top: 320px;
+        margin-left: 76px;
+    }
+    &__current-slide {
+        vertical-align: top;
+        overflow: hidden;
+    }
+    &__current-slide:after {
+        content: '';
+        width: 1px;
+        height: 23px;
+        background-color: $red;
+        display: inline-block;
+        margin: 0px 9px -5px 9px;
+    }
+    &__title {
+        font-family: PT Serif;
+        font-size: 48px;
+        color: $white;
+        max-width: 644px;
+        padding: 17px 0 0 90px;
+        line-height: 49px;
+        z-index: 2;
+        position: relative;
+    }
+    &__detail-block {
+        margin-left: 95px;
+        margin-top: 13px;
+    }
+    &__button {
+        font-family: PTSerif;
+        font-size: 24px;
+        font-style: italic;
+        color: $red;
+    }
+    &__button:before {
+        content: '';
+        width: 2px;
+        height: 45px;
+        background-color: $red;
+        display: inline-block;
+        margin: 0px 0px 39px 0px;
+    }
+    &__lines {
+        position: absolute;
+        top: 114px;
+        right: 37px;
+    }
+    &__arrow {
+        top: 338px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__indicators {
+            margin-left: -10px;
+        }
+        &__current-slide:after {
+            height: 14px;
+            margin: 0px 4px -3px 4px;
+        }
+        &__detail-block {
+            margin-left: 0px;
+        }
+        &__lines {
+            right: 31px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        &__indicators {
+            font-size: 12px;
+            padding-top: 193px;
+        }
+        &__title {
+            font-size: 28px;
+            max-width: 376px;
+            line-height: 1.03;
+            padding: 13px 0 0 0px;
+        }
+        &__arrow {
+            top: 203px;
+        }
+        &__lines {
+            top: 67px;
+        }
+        &__detail-block {
+            margin-top: 8px;
+        }
+        &__button {
+            font-size: 14px;
+        }
+        &__button:before {
+            height: 27px;
+            margin: 0px 0px 24px 0px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__indicators {
+            margin-left: 53px;
+        }
+        &__title {
+            max-width: 376px;
+            margin-left: 65px;
+        }
+        &__detail-block {
+            margin-left: 63px;
+        }
+        &__lines {
+            right: 39px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &__indicators {
+            font-size: 12px;
+            padding-top: 191px;
+            margin-left: 0px;
+        }
+        &__current-slide:after {
+            height: 14px;
+            margin: 0px 4px -3px 4px;
+        }
+        &__title {
+            font-size: 23px;
+            max-width: 267px;
+            line-height: 1.25;
+            padding: 16px 0 0 10px;
+        }
+        &__lines {
+            top: 50px;
+            right: 2px;
+        }
+        &__button {
+            font-size: 14px;
+        }
+        &__button:before {
+            height: 27px;
+            margin: 0px 0px 24px 0px;
+        }
+        &__detail-block {
+            margin-left: 11px;
+            margin-top: 8px;
+        }
+        &__arrow {
+            top: 200px;
+        }
+    }
+}
+
+.lines {
+    @media screen and (min-width: 320px) and (max-width: 1279px) {
+        height: 283px;
+    }
+}
+
+.slides {
+    width: 100%;
+    height: 690px;
+    position: absolute;
+    display: flex;
+    transition: left 1s ease-in;
+    left: 0;
+    &__item {
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        flex-shrink: 0;
+    }
+    @media screen and (min-width: 320px) and (max-width: 1279px) {
+        height: 414px;
+        width: 100%;
+    }
+}

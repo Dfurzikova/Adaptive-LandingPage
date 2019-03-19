@@ -1,0 +1,219 @@
+@import 'variables.scss';
+.card {
+    width: 50%;
+    position: relative;
+    display: flex;
+    &__title {
+        margin-left: 0px;
+    }
+    &__card-parfume {
+        background-color: $brownish-grey;
+        position: relative;
+        width: 50%;
+        margin-left: 91px;
+        .card__title {
+            color: $white;
+        }
+    }
+    &__card-breast {
+        background-color: #dddddd;
+        position: relative;
+        width: 50%;
+        margin-left: 91px;
+        display: block;
+        .card__title {
+            color: $brownish-grey;
+        }
+    }
+    &__arrow {
+        right: 50px;
+        position: absolute;
+        top: 163px;
+    }
+    &__arrow_last {
+        right: 0px;
+    }
+    &__image {
+        margin: 60px 0 0 0px;
+    }
+    &__label {
+        font-family: PT Serif;
+        font-size: 18px;
+        font-style: italic;
+        color: $white;
+        margin-top: 15px;
+    }
+    &__subtitle {
+        font-family: PT Sans;
+        font-size: 30px;
+        color: $red;
+        line-height: 0.77;
+        margin-top: 60px;
+    }
+    &__text {
+        font-family: PT Serif;
+        font-size: 18px;
+        font-style: italic;
+        line-height: 1.47;
+        margin-top: 25px;
+        max-width: 360px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__card-breast {
+            margin-right: 60px;
+        }
+        &__subtitle {
+            margin-top: 40px;
+        }
+        &__text {
+            margin-top: 15px;
+            max-width: 280px;
+        }
+        &__arrow {
+            top: 97px;
+            right: 30px;
+        }
+        &__arrow_last {
+            right: 0px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        height: 300px;
+        &__card-parfume {
+            padding-left: 0;
+        }
+        &__card-breast {
+            margin-left: 91px;
+        }
+        &__text {
+            font-size: 11px;
+            margin-top: 15px;
+            max-width: 280px;
+        }
+        &__image {
+            height: 129px;
+            margin: 40px 0 0 0px;
+        }
+        &__label {
+            font-size: 11px;
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__card-parfume {
+            padding-left: 0;
+        }
+        &__card-breast {
+            margin-right: 0px;
+        }
+        &__text {
+            max-width: 216px;
+        }
+        &__card-parfume,
+        &__card-breast {
+            margin-left: 60px;
+        }
+        &__image {
+            margin: 30px 0 0 0px;
+        }
+        &__label {
+            margin-top: 7px;
+        }
+        &__arrow {
+            right: 30px;
+            top: 90px;
+        }
+        &__arrow_last {
+            right: 0px;
+        }
+        &__subtitle {
+            margin-top: 33px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        flex-direction: column;
+        height: 650px;
+        &__card-parfume,
+        &__card-breast {
+            width: 100%;
+            margin-left: 0;
+        }
+        &__card-parfume {
+            height: 350px;
+            .card__arrow {
+                display: none;
+            }
+        }
+        &__card-breast {
+            height: 300px;
+            margin-right: 0px;
+        }
+        &__image {
+            height: 197px;
+            margin: 0;
+            margin-top: 33px;
+        }
+        &__text {
+            font-size: 11px;
+            margin-top: 15px;
+            max-width: 265px;
+        }
+        &__subtitle {
+            font-size: 18px;
+            margin-top: 35px;
+        }
+        &__label {
+            font-size: 11px;
+            margin-top: 5px;
+        }
+        &__arrow_last {
+            right: 0px;
+            top: 98px;
+        }
+    }
+}
+
+.card-bg {
+    position: absolute;
+    width: 100%;
+    &_darkgrey,
+    &_lightgrey {
+        width: 50%;
+        height: 500px;
+        position: absolute;
+        display: inline-block;
+    }
+    &_darkgrey {
+        background-color: #636363;
+    }
+    &_lightgrey {
+        margin-left: 50%;
+        background-color: #dddddd;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        &_darkgrey,
+        &_lightgrey {
+            height: 300px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &_darkgrey,
+        &_lightgrey {
+            width: 100%;
+            position: static;
+        }
+        &_darkgrey {
+            height: 350px;
+        }
+        &_lightgrey {
+            height: 300px;
+            margin-left: 0;
+        }
+    }
+}

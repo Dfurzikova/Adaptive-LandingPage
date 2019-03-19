@@ -1,0 +1,74 @@
+@import 'variables.scss';
+.reasons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__title {
+        color: $brownish-grey;
+        font-family: PT Serif;
+        font-size: 34px;
+        line-height: 1;
+        font-weight: 100;
+        margin: 90px 0;
+    }
+    &__select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        height: 45px;
+        width: 330px;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        border-bottom: solid 2px #ababab;
+        font-family: PT Sans;
+        font-size: 28px;
+        color: $red;
+        padding-bottom: 4px;
+        background: url('./../../assets/group-5.svg');
+        background-repeat: no-repeat;
+        background-position: 96% 30%;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        align-items: baseline;
+        &__title {
+            font-size: 24px;
+            margin: 46px 35px 51px 0;
+        }
+        &__select {
+            font-size: 16px;
+            width: 198px;
+            height: 26px;
+            background-size: 10px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__title {
+            font-size: 24px;
+            margin: 46px 0px 51px 0;
+        }
+        &__select {
+            font-size: 16px;
+            width: 198px;
+            height: 26px;
+        }
+        &__select:last-child {
+            margin-left: 45px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        flex-wrap: wrap;
+        &__title {
+            font-size: 24px;
+            margin: 46px 0px 26px 0px;
+        }
+        &__select {
+            margin-bottom: 52px;
+            font-size: 16px;
+            width: 140px;
+            height: 26px;
+            background-size: 12px;
+        }
+    }
+}

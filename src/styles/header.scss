@@ -1,0 +1,147 @@
+@import 'variables.scss';
+.header {
+    position: relative;
+    &__languages {
+        list-style: none;
+        font-family: PT Sans;
+        font-size: 12px;
+        padding-top: 15px;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        outline: none;
+    }
+    &__languages-item {
+        margin-right: 7px;
+        display: inline;
+    }
+    .active {
+        color: $red;
+    }
+    &__languages-item:last-child {
+        margin-right: 0;
+    }
+    &__languages-link {
+        text-decoration: none;
+        color: $black;
+    }
+    &__logo {
+        display: inline-block;
+        font-family: PT Serif;
+        font-size: 60px;
+        padding-top: 60px;
+        padding-bottom: 7px;
+        flex-grow: 1;
+    }
+    &__menu {
+        list-style: none;
+    }
+    &__menu-item {
+        display: inline;
+    }
+    &__menu-item::after {
+        content: '';
+        width: 1px;
+        height: 19px;
+        background-color: $black;
+        margin: 0px 12px 0 12px;
+        display: inline-block;
+    }
+    &__link {
+        font-family: PT Sans;
+        font-size: 20px;
+        text-decoration: none;
+        color: $black;
+        outline: none;
+    }
+    &__loupe {
+        margin-left: 5px;
+        margin-bottom: 18px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1279px) {
+        &__loupe {
+            margin: 0;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        &__menu {
+            margin-bottom: 12px;
+        }
+        &__languages {
+            font-size: 7.2px;
+        }
+        &__languages-item {
+            margin-right: 4px;
+        }
+        &__logo {
+            font-size: 38px;
+            padding-top: 42px;
+            padding-bottom: 2px;
+        }
+        &__loupe {
+            margin-left: 5px;
+            margin-bottom: 12px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+        &__menu-item::after {
+            height: 12px;
+        }
+        &__loupe-icon {
+            height: 11px;
+        }
+        &__menu-item::after {
+            margin: 0px 9px 0 9px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        &__logo {
+            font-size: 45px;
+            padding-top: 36px;
+        }
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        &__languages {
+            font-size: 7.2px;
+        }
+        &__languages-item {
+            margin-right: 3px;
+        }
+        &__menu {
+            padding: 0;
+            margin: 7px 0 0 0;
+        }
+        &__container {
+            flex-direction: column;
+            align-items: normal;
+        }
+        &__menu-item:nth-child(5):after {
+            display: none;
+        }
+        &__logo {
+            padding: 15px 0 0 0;
+            font-size: 45px;
+        }
+        &__link {
+            font-size: 9px;
+        }
+        &__menu-item::after {
+            height: 10px;
+            margin: 0px 4px 0 4px;
+        }
+        &__loupe {
+            position: absolute;
+            right: 0;
+            top: 48px;
+        }
+        &__loupe-icon {
+            height: 11px;
+        }
+    }
+}
