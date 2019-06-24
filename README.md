@@ -1,5 +1,5 @@
 # Посмотреть можно тут:
-```https://dfurzikova.github.io/Adaptive-LandingPage/```
+https://dfurzikova.github.io/Adaptive-LandingPage/
 
 # Для установки потребуется:
 ```sh
